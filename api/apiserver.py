@@ -687,5 +687,5 @@ if __name__ == "__main__":
     tornado.options.parse_command_line(args)
     Base.metadata.create_all(engine)
     app = make_app()
-    app.listen( 8888 )
+    app.listen( 8888, "localhost" )
     tornado.ioloop.IOLoop.current().start()

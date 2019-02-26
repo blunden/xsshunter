@@ -67,5 +67,5 @@ if __name__ == "__main__":
     DOMAIN = settings["domain"]
     API_SERVER = "https://api." + DOMAIN
     app = make_app()
-    app.listen( 1234 )
+    app.listen( 1234, "localhost" )
     tornado.ioloop.IOLoop.current().start()
